@@ -183,8 +183,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    @apply m-0 p-0 h-full;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground m-0 p-0 h-full overflow-x-hidden;
   }
 }
 
@@ -208,7 +211,8 @@
       transparent,
       transparent
     );
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     animation: rotate-border 3s linear infinite;
@@ -233,7 +237,8 @@
       transparent,
       transparent
     );
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     animation: rotate-border 3s linear infinite;
