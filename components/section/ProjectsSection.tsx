@@ -9,7 +9,7 @@ const ProjectsSection = () => {
         "Submódulo de Gestión de Estudiantes con integración a la Ficha Única del Ciudadano (FUC) para validación automática de datos. ",
       image: "/image/proyects/sigies.webp",
       githubUrl: "https://github.com/erlandel/frontend-sigies",
-      tags: ["Angular", "NestJS", "PostgreSQL", "TailwindCSS"],
+      tags: ["Angular", "NestJS", "PostgreSQL", "Sass"],
     },
     {
       title: "Plataforma de Boletos Aéreos",
@@ -24,7 +24,7 @@ const ProjectsSection = () => {
 
   return (
     <div className="py-12">
-      <div className="flex items-center justify-center mb-8">
+      <div className="flex items-center justify-center mb-10">
         <FluentColorCode16 className="mr-2" />
         <h2 className="text-white text-justify text-3xl">Proyectos</h2>
       </div>

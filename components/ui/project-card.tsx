@@ -45,7 +45,8 @@ export const ProjectCard = ({
             {tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-3 py-1 text-xs rounded-full bg-linear-to-r from-pink-500 to-yellow-500 text-white"
+                className="px-3 py-1 text-sm rounded-full bg-linear-to-r from-[#c03636] via-[#ce8026] to-[#e7c815]
+                text-white"
               >
                 {tag}
               </span>

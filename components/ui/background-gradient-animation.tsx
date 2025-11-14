@@ -107,13 +107,10 @@ export const BackgroundGradientAnimation = ({
         </defs>
       </svg>
 
-      {/* Content Layer */}
-      <div className={cn(className)}>{children}</div>
-
-      {/* Animated Gradients Layer */}
+      {/* Animated Gradients Layer - Behind content */}
       <div
         className={cn(
-          "gradients-container fixed inset-0 h-screen w-screen blur-lg pointer-events-none",
+          "gradients-container fixed inset-0 h-screen w-screen blur-lg pointer-events-none z-0",
           isSafari ? "blur-2xl" : "filter-[url(#blurMe)_blur(40px)]"
         )}
       >
@@ -175,6 +172,9 @@ export const BackgroundGradientAnimation = ({
           />
         )}
       </div>
+
+      {/* Content Layer - Above gradients */}
+      <div className={cn("relative z-10", className)}>{children}</div>
     </div>
   );
 };

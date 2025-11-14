@@ -29,9 +29,9 @@ export const ExperienceSection = () => {
   ];
   return (
     <div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mb-10">
         <UilSuitcase className="mr-2" />
-        <h2 className="text-white text-justify text-3xl">
+        <h2 className="text-white text-justify text-3xl ">
           Experiencia Laboral
         </h2>
       </div>
