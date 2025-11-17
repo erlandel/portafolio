@@ -8,12 +8,13 @@ import {
   MaterialIconThemeDocument,
   MdiGmail,
 } from "@/icons/icons";
+import { SplineScene } from "@/components/ui/splite";
 
 const AboutMeSection = () => {
   return (
     <>
-      <div className="relative z-50 flex items-center justify-around  gap-8 px-8 py-12 md:px-16 lg:px-24">
-        <div>
+      <div className="relative z-50 flex flex-col md:flex-row items-center justify-between gap-16 px-8 py-12 md:px-16 lg:px-24">
+        <div className="flex-1 w-full">
           <div className="flex items-center  gap-4">
             <div>
               <Image
@@ -39,7 +40,7 @@ const AboutMeSection = () => {
             </div>
           </div>
 
-          <div className="w-2/4 text-white text-xl text-justify bg-black/30 backdrop-blur-sm p-4 rounded-2xl mt-2">
+          <div className="text-white text-xl text-justify bg-black/30 backdrop-blur-sm p-4 rounded-2xl mt-2">
             <p className="leading-relaxed">
               Soy ingeniero de software con más de{" "}
               <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
@@ -89,16 +90,15 @@ const AboutMeSection = () => {
               </div>
             </div>
           </div>
+
         </div>
-        <div>
-          {/* <Image
-            className="w-full h-full "
-            src="/image/2.gif"
-            alt="Bordered avatar"
-            width={500}
-            height={500}
-          /> */}
+        <div className="flex-1 w-full flex justify-center items-center">
+          <SplineScene
+            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+            className="w-full max-w-lg h-[420px]"
+          />
         </div>
+
       </div>
     </>
   );
