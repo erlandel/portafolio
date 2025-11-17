@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { CardBody, CardContainer, CardItem } from "./3d-card";
 import { LineiconsGithub } from "@/icons/icons";
 
@@ -34,11 +36,16 @@ export const ProjectCard = ({
           {description}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <img
-            src={image}
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt={title}
-          />
+          <div className="relative h-60 w-full overflow-hidden rounded-xl group-hover/card:shadow-xl">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+              priority={false}
+            />
+          </div>
         </CardItem>
         {tags && tags.length > 0 && (
           <CardItem translateZ="50" className="flex gap-2 mt-4 flex-wrap">

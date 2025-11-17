@@ -1,104 +1,45 @@
-"use client";
+import AvatarFrame from "@/components/ui/avatar-frame";
+import { TablerUserCheck } from "@/icons/icons";
 
-import Image from "next/image";
-import { BorderMagicButton } from "../ui/border-magic-button";
-import { GlowBorderButton } from "../ui/glow-border-button";
-import {
-  LineiconsGithub,
-  MaterialIconThemeDocument,
-  MdiGmail,
-} from "@/icons/icons";
-import { SplineScene } from "@/components/ui/splite";
-
-const AboutMeSection = () => {
+const AboutMeSection: React.FC = () => {
   return (
     <>
-      <div className="relative z-50 flex flex-col md:flex-row items-center justify-between gap-16 px-8 py-12 md:px-16 lg:px-24">
-        <div className="flex-1 w-full">
-          <div className="flex items-center  gap-4">
-            <div>
-              <Image
-                className="w-32 h-32 rounded-full ring-default object-cover border-4"
-                src="/image/avatar/1.webp"
-                alt="Bordered avatar"
-                width={120}
-                height={120}
-              />
+      <div className="p-5">
+        <div className="flex flex-col items-center mt:-8 sm:mt-4 gap-10 text-justify md:flex-row md:justify-center">
+          <div className="order-2 w-full md:w-1/2 md:order-1 text-xl text-white">
+            <div className="flex items-center justify-center mb-5">
+              <TablerUserCheck className="mr-2 " />
+              <h2 className="text-3xl ">Sobre mí</h2>
             </div>
-
             <div>
-              <div className="text-start mb-5">
-                <GlowBorderButton>Disponible para trabajar</GlowBorderButton>
-              </div>
+              <p>
+                Me llamo Erlan Delfino. Soy Ingeniero en Ciencias Informáticas y
+                descubrí mi pasión por el desarrollo web desde mis primeros años
+                de estudio, donde pude combinar creatividad y lógica para
+                construir soluciones funcionales.
+              </p>
 
-              <h1 className="text-3xl text-center">
-                Hola,{" "}
+              <p className="mt-6">
+                A lo largo de mi carrera he trabajado en{" "}
                 <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
-                  soy Erlan G.
-                </span>
-              </h1>
+                  proyectos académicos y profesionales
+                </span>{" "}
+                desarrollando interfaces modernas, sistemas seguros y
+                arquitecturas escalables con Next.js, Angular, NestJS y
+                PostgreSQL.
+              </p>
+
+              <p className="mt-6">
+                Disfruto crear experiencias fluidas, optimizar procesos y
+                aportar valor real a cada proyecto en el que participo.
+              </p>
             </div>
           </div>
 
-          <div className="text-white text-xl text-justify bg-black/30 backdrop-blur-sm p-4 rounded-2xl mt-2">
-            <p className="leading-relaxed">
-              Soy ingeniero de software con más de{" "}
-              <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
-                3 años de experiencia
-              </span>{" "}
-              en el desarrollo full stack de aplicaciones web con Next.js,
-              Angular, NestJS y PostgreSQL. Combino interfaces atractivas con
-              arquitecturas{" "}
-              <span className="font-semibold">
-                backend sólidas y escalables
-              </span>
-              .
-              <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
-                He liderado proyectos con mejoras de rendimiento (+25%) y
-                entrega (+40%)
-              </span>
-              , además de integrar sistemas complejos y automatizar procesos
-              mediante bots. Apasionado por crear experiencias fluidas e innovar
-              en cada línea de código.
-            </p>
-
-            <div className="flex gap-4 justify-around pt-4">
-              <div>
-                <BorderMagicButton
-                  icon={<LineiconsGithub className="w-6 h-6" />}
-                  onClick={() => window.open("https://github.com/erlandel")}
-                >
-                  GitHub
-                </BorderMagicButton>
-              </div>
-
-              <div>
-                <BorderMagicButton
-                  icon={<MaterialIconThemeDocument className="w-6 h-6" />}
-                  borderColor="purple"
-                  onClick={() => {
-                    const link = document.createElement("a");
-                    link.href = "/cv/VC.docx";
-                    link.download = "CV_Erlan_Delfino.docx";
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }}
-                >
-                  Currículo
-                </BorderMagicButton>
-              </div>
-            </div>
+          <div className="order-1 w-full md:w-1/2 md:order-2 flex justify-center">
+            <AvatarFrame className="mt-8 sm:mt-0" />
           </div>
-
         </div>
-        <div className="flex-1 w-full flex justify-center items-center">
-          <SplineScene
-            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-            className="w-full max-w-lg h-[420px]"
-          />
-        </div>
-
       </div>
     </>
   );

@@ -1,8 +1,9 @@
-import AboutMeSection from "@/components/section/AboutMeSection";
 import ExperienceSection from "@/components/section/ExperienceSection";
 import ProjectsSection from "@/components/section/ProjectsSection";
 import TypingEffect from "@/components/typingEffect/TypingEffect";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import IntroSection from "@/components/section/IntroSection";
+import AboutMeSection from "@/components/section/AboutMeSection";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         </div>
 
         <section>
-          <AboutMeSection />
+          <IntroSection />
         </section>
 
         <section className=" p-5">
@@ -25,6 +26,11 @@ export default function Home() {
         <section className="mt-5">
           <ProjectsSection />
         </section>
+
+        <section className="mt-5">
+          <AboutMeSection />
+        </section>
+
       </div>
     </BackgroundGradientAnimation>
   );
