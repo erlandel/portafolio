@@ -13,25 +13,31 @@ import { SplineScene } from "@/components/ui/splite";
 const IntroSection = () => {
   return (
     <>
-      <div className="relative z-50 flex flex-col md:flex-row items-center justify-between gap-16 px-8 py-12 md:px-16 lg:px-24">
+      <div className="relative z-50 flex flex-col lg:flex-row items-center justify-between gap-16 px-8 py-12 md:px-16 lg:px-24">
         <div className="flex-1 w-full">
-          <div className="flex items-center  gap-4">
-            <div>
-              <Image
-                className="w-32 h-32 rounded-full ring-default object-cover border-4"
-                src="/image/avatar/1.webp"
-                alt="Bordered avatar"
-                width={120}
-                height={120}
-              />
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="flex items-center gap-4">
+              <div>
+                <Image
+                  className="w-28 h-28 sm:w-32 sm:h-32 rounded-full ring-default object-cover border-4 shrink-0"
+                  src="/image/avatar/1.webp"
+                  alt="Bordered avatar"
+                  width={128}
+                  height={128}
+                />
+              </div>
+
+              <div className="sm:hidden">
+                <GlowBorderButton>Disponible para trabajar</GlowBorderButton>
+              </div>
             </div>
 
-            <div>
-              <div className="text-start mb-5">
+            <div className="flex flex-col items-center sm:items-start">
+              <div className="hidden sm:block text-start mb-5">
                 <GlowBorderButton>Disponible para trabajar</GlowBorderButton>
               </div>
 
-              <h1 className="text-3xl text-center">
+              <h1 className="text-3xl text-center sm:text-left">
                 Hola,{" "}
                 <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
                   soy Erlan G.
@@ -65,7 +71,7 @@ const IntroSection = () => {
             <div className="flex gap-4 justify-around pt-4">
               <div>
                 <BorderMagicButton
-                  icon={<LineiconsGithub className="w-6 h-6" />}
+                  icon={<LineiconsGithub className="w-5 h-5 sm:w-6 sm:h-6" />}
                   onClick={() => window.open("https://github.com/erlandel")}
                 >
                   GitHub
@@ -74,7 +80,7 @@ const IntroSection = () => {
 
               <div>
                 <BorderMagicButton
-                  icon={<MaterialIconThemeDocument className="w-6 h-6" />}
+                  icon={<MaterialIconThemeDocument className="w-5 h-5 sm:w-6 sm:h-6" />}
                   borderColor="purple"
                   onClick={() => {
                     const link = document.createElement("a");

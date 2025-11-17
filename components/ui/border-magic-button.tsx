@@ -36,7 +36,7 @@ export const BorderMagicButton = ({
       {...props}
     >
       {/* Inner button */}
-      <span className="flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3">
+      <span className="flex items-center gap-2 rounded-full bg-slate-950 px-5 py-2.5 sm:px-6 sm:py-3 text-base">
         {icon && <span className="text-lg">{icon}</span>}
         {children}
       </span>

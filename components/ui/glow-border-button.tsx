@@ -32,13 +32,13 @@ export const GlowBorderButton = ({
       {/* Inner button */}
       <span
         className={cn(
-          "inline-flex h-full w-full items-center justify-center rounded-full bg-slate-900 px-8 py-4 text-sm font-medium text-white backdrop-blur-3xl",
+          "inline-flex h-full w-full items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 sm:px-8 sm:py-4 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl",
           className
         )}
       >
-        <span className="relative flex h-3 w-3 mr-3">
+        <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3 mr-2 sm:mr-3">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
-          <span className="relative inline-flex h-3 w-3 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
+          <span className="relative inline-flex h-full w-full rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
         </span>
         {children}
       </span>
