@@ -4,14 +4,14 @@ import { TablerUserCheck } from "@/icons/icons";
 const AboutMeSection: React.FC = () => {
   return (
     <>
-      <div className="p-5">
-        <div className="flex flex-col items-center mt:-8 sm:mt-4 gap-10 text-justify md:flex-row md:justify-center">
-          <div className="order-2 w-full md:w-1/2 md:order-1 text-xl text-white">
-            <div className="flex items-center justify-center mb-5">
+      <div className="sm:p-5 ">
+        <div className="flex flex-col items-center mt:-8 sm:mt-4  text-justify xl:flex-row md:justify-center py-12">
+          <div className="order-2 w-full xl:w-2/3 xl:order-1 text-xl text-white mt-10 xl:mt-0">
+            <div className="flex items-center justify-center">
               <TablerUserCheck className="mr-2 " />
               <h2 className="text-3xl ">Sobre mí</h2>
             </div>
-            <div>
+            <div className="text-2xl space-y-5 mt-5">
               <p>
                 Me llamo Erlan Delfino. Soy Ingeniero en Ciencias Informáticas y
                 descubrí mi pasión por el desarrollo web desde mis primeros años
@@ -36,8 +36,8 @@ const AboutMeSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="order-1 w-full md:w-1/2 md:order-2 flex justify-center">
-            <AvatarFrame className="mt-8 sm:mt-0" />
+          <div className="order-1 w-full xl:w-1/3 xl:order-2 flex justify-center">
+            <AvatarFrame  />
           </div>
         </div>
       </div>

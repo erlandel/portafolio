@@ -13,7 +13,7 @@ import { SplineScene } from "@/components/ui/splite";
 const IntroSection = () => {
   return (
     <>
-      <div className="relative z-50 flex flex-col lg:flex-row items-center justify-between gap-16 px-8 py-12 md:px-16 lg:px-24">
+      <div className="relative z-50 flex flex-col lg:flex-row items-center justify-between gap-16 sm:px-8 py-12">
         <div className="flex-1 w-full">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             <div className="flex items-center gap-4">
@@ -37,7 +37,7 @@ const IntroSection = () => {
                 <GlowBorderButton>Disponible para trabajar</GlowBorderButton>
               </div>
 
-              <h1 className="text-3xl text-center sm:text-left">
+              <h1 className="text-3xl text-center sm:text-left text-white">
                 Hola,{" "}
                 <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
                   soy Erlan G.
@@ -46,26 +46,15 @@ const IntroSection = () => {
             </div>
           </div>
 
-          <div className="text-white text-xl text-justify bg-black/30 backdrop-blur-sm p-4 rounded-2xl mt-2">
+          <div className="text-white text-xl sm:text-3xl  backdrop-blur-sm sm:p-4 rounded-2xl mt-2">
             <p className="leading-relaxed">
-              Ingeniero de software con más de{" "}
+              Ingeniero en Ciencias Informáticas con más de{" "}
               <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
                 3 años de experiencia
               </span>{" "}
               en el desarrollo full stack de aplicaciones web con Next.js,
-              Angular, NestJS y PostgreSQL. Combino interfaces atractivas con
-              arquitecturas{" "}
-              <span className="font-semibold">
-                backend sólidas y escalables
-              </span>
-              .
-              <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
-                He liderado proyectos con mejoras de rendimiento (+25%) y
-                entrega (+40%)
-              </span>
-              , además de integrar sistemas complejos y automatizar procesos
-              mediante bots. Apasionado por crear experiencias fluidas e innovar
-              en cada línea de código.
+              Angular, NestJS y PostgreSQL.
+           
             </p>
 
             <div className="flex gap-4 justify-around pt-4">

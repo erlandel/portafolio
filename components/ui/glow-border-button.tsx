@@ -27,7 +27,7 @@ export const GlowBorderButton = ({
       {...props}
     >
       {/* Spinning gradient border */}
-      <span className="absolute inset-[-1000%] animate-[spin_var(--duration)_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#8b5cf6_25%,#a855f7_50%,#8b5cf6_75%,#3b82f6_100%)]" />
+      <span className="absolute inset-[-1000%] animate-[spin_var(--duration)_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e8e7e9_50%,#fefdff_75%)]" />
 
       {/* Inner button */}
       <span
@@ -37,8 +37,8 @@ export const GlowBorderButton = ({
         )}
       >
         <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3 mr-2 sm:mr-3">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
-          <span className="relative inline-flex h-full w-full rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+          <span className="relative inline-flex h-full w-full rounded-full bg-green-500 shadow-[0_0_8px_rgba(30, 143, 73, 0.8)]"></span>
         </span>
         {children}
       </span>

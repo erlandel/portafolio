@@ -24,7 +24,7 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="text-white bg-black/30 backdrop-blur-sm relative group/card hover:shadow-2xl hover:shadow-emerald-500/10 border-white/20 w-auto sm:w-120 h-auto rounded-2xl p-6 border">
+      <CardBody className="text-white bg-black/30 backdrop-blur-sm relative group/card hover:shadow-2xl hover:shadow-emerald-500/10 border-white/20 w-auto sm:w-100 h-auto rounded-2xl p-6 border">
         <CardItem translateZ="50" className="text-xl font-bold text-white">
           {title}
         </CardItem>
