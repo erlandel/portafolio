@@ -8,7 +8,8 @@ import {
   MaterialIconThemeDocument,
   MdiGmail,
 } from "@/icons/icons";
-import { SplineScene } from "@/components/ui/splite";
+// import SplineScene from "@/components/ui/splite";
+
 
 const IntroSection = () => {
   return (
@@ -46,7 +47,7 @@ const IntroSection = () => {
             </div>
           </div>
 
-          <div className="text-white text-xl sm:text-2xl  backdrop-blur-sm sm:p-4 rounded-2xl mt-2">
+          <div className="max-w-160 text-white text-xl sm:text-2xl  backdrop-blur-sm sm:p-4 rounded-2xl mt-2">
             <p className="leading-relaxed">
               Ingeniero en Ciencias Informáticas con más de{" "}
               <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
@@ -87,12 +88,12 @@ const IntroSection = () => {
           </div>
 
         </div>
-        <div className="flex-1 w-full flex justify-center items-center">
+        {/* <div className="flex-1 w-full flex justify-center items-center">
           <SplineScene
             scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
             className="w-full max-w-lg h-[420px]"
           />
-        </div>
+        </div> */}
 
       </div>
     </>
