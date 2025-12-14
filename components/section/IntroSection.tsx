@@ -13,7 +13,7 @@ import { SplineScene } from "@/components/ui/splite";
 const IntroSection = () => {
   return (
     <>
-      <div className="relative z-50 flex flex-col lg:flex-row items-center justify-between gap-16 sm:px-8 py-12">
+      <div className="relative z-50 flex flex-col lg:flex-row items-center justify-between gap-10 sm:px-8 py-12">
         <div className="flex-1 w-full">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             <div className="flex items-center gap-4">
@@ -46,7 +46,7 @@ const IntroSection = () => {
             </div>
           </div>
 
-          <div className="text-white text-xl sm:text-3xl  backdrop-blur-sm sm:p-4 rounded-2xl mt-2">
+          <div className="text-white text-xl sm:text-2xl  backdrop-blur-sm sm:p-4 rounded-2xl mt-2">
             <p className="leading-relaxed">
               Ingeniero en Ciencias Informáticas con más de{" "}
               <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
@@ -57,7 +57,7 @@ const IntroSection = () => {
            
             </p>
 
-            <div className="flex gap-4 justify-around pt-4">
+            <div className="flex  justify-center gap-10 pt-4">
               <div>
                 <BorderMagicButton
                   icon={<LineiconsGithub className="w-5 h-5 sm:w-6 sm:h-6" />}

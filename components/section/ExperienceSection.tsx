@@ -4,17 +4,17 @@ import { UilSuitcase } from "@/icons/icons";
 export const ExperienceSection = () => {
    
   return (
-    <div>
+    <div >
       <div className="flex items-center justify-center mb-10">
         <UilSuitcase className="mr-2" />
-        <h2 className="text-white text-justify text-3xl ">
+        <h2 className="text-white  text-3xl ">
           Experiencia Laboral
         </h2>
       </div>
 
       {dataExperience.map((experience) => (
         <div
-          className="flex justify-center space-y-10 flex-col items-start lg:flex-row mt-12 xl:mx-48"
+          className="flex justify-center space-y-10 flex-col items-start lg:flex-row mt-12 "
           key={experience.id}
         >
           
@@ -28,7 +28,7 @@ export const ExperienceSection = () => {
           </div>
          
 
-          <div className="w-full lg:w-8/12 text-justify text-white text-2xl">
+          <div className="w-full lg:w-8/12 text-white text-lg sm:text-2xl">
             <p>{experience.description}</p>
           </div>
 

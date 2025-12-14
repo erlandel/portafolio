@@ -29,6 +29,6 @@ export const dataExperience = [
       agency: "Grupo-Fadiar",
       date: "septiembre  2025 – noviembre  2025",
       description:
-        "Como Lead Frontend Developer en Fadiar Group desarrollé una plataforma e-commerce escalable con Next.js, React y TypeScript, implementando autenticación segura, flujo completo de compras y pagos multimoneda, con un frontend optimizado en rendimiento y experiencia de usuario bajo buenas prácticas de arquitectura.",
+        "En el Grupo Fadiar desarrollé una plataforma e-commerce escalable con Next.js, React y TypeScript, implementando autenticación segura, flujo completo de compras y pagos multimoneda, con un frontend optimizado en rendimiento y experiencia de usuario bajo buenas prácticas de arquitectura.",
     },
   ];

@@ -4,14 +4,14 @@ import { TablerUserCheck } from "@/icons/icons";
 const AboutMeSection: React.FC = () => {
   return (
     <>
-      <div className="sm:p-5 ">
-        <div className="flex flex-col items-center mt:-8 sm:mt-4  text-justify xl:flex-row md:justify-center py-12">
+      <div className="">
+        <div className="flex flex-col items-center mt:-8 sm:mt-4  xl:flex-row md:justify-center py-12 gap-15">
           <div className="order-2 w-full xl:w-2/3 xl:order-1 text-xl text-white mt-10 xl:mt-0">
             <div className="flex items-center justify-center">
               <TablerUserCheck className="mr-2 " />
               <h2 className="text-3xl ">Sobre mí</h2>
             </div>
-            <div className="text-2xl space-y-5 mt-5">
+            <div className="text-lg  sm:text-2xl space-y-5 mt-5 ">
               <p>
                 Me llamo Erlan Delfino. Soy Ingeniero en Ciencias Informáticas y
                 descubrí mi pasión por el desarrollo web desde mis primeros años
@@ -25,8 +25,7 @@ const AboutMeSection: React.FC = () => {
                   proyectos académicos y profesionales
                 </span>{" "}
                 desarrollando interfaces modernas, sistemas seguros y
-                arquitecturas escalables con Next.js, Angular, NestJS y
-                PostgreSQL.
+                arquitecturas escalables.
               </p>
 
               <p className="mt-6">

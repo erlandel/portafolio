@@ -7,10 +7,7 @@ import AboutMeSection from "@/components/section/AboutMeSection";
 export default function Home() {
   return (
     <div 
-      className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed px-4 md:px-16 lg:px-24 xl:px-40"
-      style={{
-        backgroundImage: "url('/image/1.jpg')"
-      }}
+       className="min-h-screen bg-[url('/image/1.webp')] bg-cover bg-center bg-no-repeat bg-fixed px-4 md:px-16 lg:px-40"
     >
       <div className="">
         <div className="inset-0 z-50 flex pt-8 justify-center px-4 text-center text-3xl font-bold text-white pointer-events-none md:text-4xl lg:text-5xl ">
