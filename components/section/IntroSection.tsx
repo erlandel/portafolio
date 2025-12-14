@@ -14,9 +14,10 @@ import {
 const IntroSection = () => {
   return (
     <>
-      <div className="relative z-50 flex flex-col lg:flex-row items-center justify-between gap-10 sm:px-8 py-12">
-        <div className="flex-1 w-full">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+      <div className=" flex flex-col lg:flex-row w-full items-center justify-center py-12">
+        <div className="w-full flex flex-col justify-center items-center">
+          <div>
+               <div className="flex flex-col sm:flex-row gap-4">
             <div className="flex items-center gap-4">
               <div>
                 <Image
@@ -41,7 +42,7 @@ const IntroSection = () => {
               <h1 className="text-3xl text-center sm:text-left text-white">
                 Hola,{" "}
                 <span className="bg-linear-to-tr from-pink-500 to-yellow-500 bg-clip-text text-transparent">
-                  soy Erlan G.
+                  soy Erlan D.
                 </span>
               </h1>
             </div>
@@ -87,13 +88,11 @@ const IntroSection = () => {
             </div>
           </div>
 
+          </div>
+       
+
         </div>
-        {/* <div className="flex-1 w-full flex justify-center items-center">
-          <SplineScene
-            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-            className="w-full max-w-lg h-[420px]"
-          />
-        </div> */}
+
 
       </div>
     </>

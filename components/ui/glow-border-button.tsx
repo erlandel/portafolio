@@ -32,7 +32,7 @@ export const GlowBorderButton = ({
       {/* Inner button */}
       <span
         className={cn(
-          "inline-flex h-full w-full items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 sm:px-8 sm:py-4 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl",
+          "inline-flex h-full w-full items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 sm:px-8 sm:py-2.2 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl",
           className
         )}
       >
